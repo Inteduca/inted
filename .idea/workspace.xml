@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usuario.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="usuario.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/usuario/templates/usuario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+            <state relative-caret-position="194">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inted/routing.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -158,8 +158,8 @@
         <option value="$PROJECT_DIR$/usuario/consumers.py" />
         <option value="$PROJECT_DIR$/usuario/views.py" />
         <option value="$PROJECT_DIR$/templates/inted/base.html" />
-        <option value="$PROJECT_DIR$/usuario/templates/usuario.html" />
         <option value="$PROJECT_DIR$/inted/routing.py" />
+        <option value="$PROJECT_DIR$/usuario/templates/usuario.html" />
       </list>
     </option>
   </component>
@@ -552,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pruebachat/chat/templates/chat/room.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/usuario/consumers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-283">
@@ -613,10 +606,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuario/templates/usuario.html">
+    <entry file="file://$PROJECT_DIR$/inted/routing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        <state relative-caret-position="153">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -629,13 +625,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inted/routing.py">
+    <entry file="file://$PROJECT_DIR$/../pruebachat/chat/templates/chat/room.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="575">
+          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario/templates/usuario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
         </state>
       </provider>
     </entry>
