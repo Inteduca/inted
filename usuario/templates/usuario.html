@@ -18,7 +18,6 @@
         '/ws/usuario/' + roomName + "/");
 
     chatSocket.onmessage = function(e) {
-        var usu = "{{username}}";
         var data = JSON.parse(e.data);
         var message = data['message'];
         document.querySelector('#chat-log').value += (usu + " : " + message + '\n');
@@ -36,8 +35,9 @@
     };
 
     document.querySelector('#chat-message-submit').onclick = function(e) {
+        var usu = "{{username}}";
         var messageInputDom = document.querySelector('#chat-message-input');
-        var message = messageInputDom.value;
+        var message = usu + " : " + messageInputDom.value;
         chatSocket.send(JSON.stringify({
             'message': message
         }));
