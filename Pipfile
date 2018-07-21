@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+channels = "*"
+"psycopg2" = "*"
+channels-redis = "*"
+dj-database-url = "*"
+asgiref = "*"
+"pypiwin32" = "*"
+whitenoise = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
