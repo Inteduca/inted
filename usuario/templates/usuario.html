@@ -15,7 +15,7 @@
 
     var chatSocket = new WebSocket(
         'ws://' + window.location.host +
-        '/ws/usuario/' + '/');
+        '/ws/usuario/');
 
     chatSocket.onmessage = function(e) {
         var user = {{username}};
