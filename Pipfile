@@ -10,8 +10,8 @@ channels = "*"
 channels-redis = "*"
 dj-database-url = "*"
 asgiref = "*"
-"pypiwin32" = "*"
 whitenoise = "*"
+"pypiwin32" = "*"
 
 [dev-packages]
 
