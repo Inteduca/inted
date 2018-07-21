@@ -4,9 +4,9 @@ import json
 
 class ChatConsumer(WebsocketConsumer):
     def connect(self):
-        user=self.scope["user"]
-        self.room_name = user
-        self.room_group_name = user
+        username=self.scope["user"].username
+        self.room_name = username
+        self.room_group_name = username
 
         # Join room group
         async_to_sync(self.channel_layer.group_add)(

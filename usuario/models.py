@@ -5,9 +5,3 @@ class Comentarios(models.Model):
     horario_text = models.TextField(default="¡Vaya! Parece que todavía no tienes un horario. Contacta con tutor y lo tendrás pronto.")
     observaciones_text=models.TextField(default="¡Vaya! Parece que todavía no tienes ninguna observación.")
     username = models.CharField(max_length=30)
-
-class Asignaturas(models.Model):
-    username = models.CharField(max_length=30)
-    matematicas = models.CharField(max_length=10, default="f")
-    fisica = models.CharField(max_length=10, default="f")
-    quimica = models.CharField(max_length=10, default="f")

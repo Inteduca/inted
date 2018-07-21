@@ -18,7 +18,7 @@
 input[type=text]{
     color: rgb(0,0,0);
     width: 90%;
-    min-height:20%;
+    min-height:25%;
     font-size: 20;
     text-align: center;
     border: 2px rgb(179,179,179);
@@ -26,7 +26,7 @@ input[type=text]{
 input[type=password]{
     color: rgb(0,0,0);
     width: 90%;
-    min-height:20%;
+    min-height:29%;
     font-size: 20;
     text-align: center;
     border: 2px rgb(179,179,179);
@@ -48,10 +48,10 @@ li{
 }
 #boton{
     position: absolute;
-    top: 82%;
+    top: 75%;
     left: 10%;
     width: 80%;
-    min-height: 12%;
+    min-height: 13%;
     font-size: 18;
 }
 #explicacion{
