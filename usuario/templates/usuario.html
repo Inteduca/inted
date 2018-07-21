@@ -11,14 +11,14 @@
 </body>
 
 <script>
-    var roomName = "{{username}}";
+    var roomName = "{{room_name}}";
 
     var chatSocket = new WebSocket(
         'ws://' + window.location.host +
         '/ws/usuario/' + roomName + "/");
 
     chatSocket.onmessage = function(e) {
-        var usu = "{{username}}";
+        var usu = "{{room_name}}";
         var data = JSON.parse(e.data);
         var message = data['message'];
         document.querySelector('#chat-log').value += (usu + " : " + message + '\n');
