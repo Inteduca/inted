@@ -13,7 +13,7 @@ def login(request):
         user2=authenticate(request, username=username, password=password)
         if user2 is not None:
             auth_login(request, user2)
-            return HttpResponseRedirect('/usuario')
+            return HttpResponseRedirect('/usuario' + '/' + username)
             #else:
                 #raise Http404("ERROR interno")
         #except:
@@ -43,7 +43,7 @@ def registrar(request):
             user2=authenticate(request, username=username, password=password)
             if user2 is not None:
                 login(request, user2)
-                return HttpResponseRedirect('/usuario')
+                return HttpResponseRedirect('/usuario/' + username)
             else:
                 raise Http404
         except:

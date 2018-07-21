@@ -11,11 +11,11 @@
 </body>
 
 <script>
-    var roomName = "eeee";
+    var roomName = {{room_name_json}};
 
     var chatSocket = new WebSocket(
         'ws://' + window.location.host +
-        '/ws/usuario/');
+        '/ws/usuario/' + roomName + "/");
 
     chatSocket.onmessage = function(e) {
         var usu = {{username}}
