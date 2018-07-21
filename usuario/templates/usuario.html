@@ -11,17 +11,17 @@
 </body>
 
 <script>
-    var roomName = {{ room_name_json }};
+    var roomName = "eeee";
 
     var chatSocket = new WebSocket(
         'ws://' + window.location.host +
-        '/ws/chat/' + roomName + '/');
+        '/ws/usuario/' + '/');
 
     chatSocket.onmessage = function(e) {
-        var user = "jorge";
+        var user = {{username}};
         var data = JSON.parse(e.data);
         var message = data['message'];
-        document.querySelector('#chat-log').value += (user + ":" + message + '\n');
+        document.querySelector('#chat-log').value += (user + " : " + message + '\n');
     };
 
     chatSocket.onclose = function(e) {
