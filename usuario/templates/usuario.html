@@ -11,17 +11,17 @@
 </body>
 
 <script>
-    var roomName = "Chat con tu tutor";
+    var roomName = {{ room_name_json }};
 
     var chatSocket = new WebSocket(
         'ws://' + window.location.host +
-        '/ws/usuario/');
+        '/ws/chat/' + roomName + '/');
 
     chatSocket.onmessage = function(e) {
-        var user = {{username}};
+        var user = "jorge";
         var data = JSON.parse(e.data);
         var message = data['message'];
-        document.querySelector('#chat-log').value += (user + " : " + message + '\n');
+        document.querySelector('#chat-log').value += (user + ":" + message + '\n');
     };
 
     chatSocket.onclose = function(e) {
