@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="usuario.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="usuario.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuario/templates/usuario.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="516">
@@ -22,6 +22,15 @@
               <folding>
                 <element signature="e#668#674#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuario.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/usuario/static/usuario/usuario.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -67,10 +76,10 @@
         <option value="$PROJECT_DIR$/inted/routing.py" />
         <option value="$PROJECT_DIR$/../education/usuario/templates/inicio.html" />
         <option value="$PROJECT_DIR$/usuario/views.py" />
-        <option value="$PROJECT_DIR$/usuario/static/usuario/usuario.css" />
         <option value="$PROJECT_DIR$/principal/views.py" />
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/usuario/templates/usuario.html" />
+        <option value="$PROJECT_DIR$/usuario/static/usuario/usuario.css" />
       </list>
     </option>
   </component>
@@ -113,6 +122,19 @@
             <path>
               <item name="inted" type="b2602c69:ProjectViewProjectNode" />
               <item name="inted" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inted" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inted" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inted" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inted" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="usuario" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -530,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuario/static/usuario/usuario.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -564,6 +579,13 @@
           <folding>
             <element signature="e#668#674#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario/static/usuario/usuario.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
