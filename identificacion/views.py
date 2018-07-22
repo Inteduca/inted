@@ -28,7 +28,7 @@ def registrar(request):
         password2=request.POST.get('password2')
         email=request.POST.get('email')
         if password != password2:
-            return Http404("Las contraseñas no coinciden")
+            raise Http404("Las contraseñas no coinciden")
         else:
             try:
                 user=User.objects.create_user(username=username, password=password, email=email)
