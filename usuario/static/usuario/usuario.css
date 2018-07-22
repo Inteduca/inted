@@ -27,6 +27,7 @@ h1{
 
 #chat-log{
     font-size:18;
+    font-family:"Arial";
     color:rgb(51,51,51);
     overflow: auto;
     resize:none;

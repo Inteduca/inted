@@ -27,8 +27,8 @@ def registrar(request):
         password=request.POST.get('password')
         password2=request.POST.get('password2')
         email=request.POST.get('email')
-        if password!=password2:
-            Http404("Las contraseñas no coinciden")
+        if password != password2:
+            return Http404("Las contraseñas no coinciden")
         else:
             try:
                 user=User.objects.create_user(username=username, password=password, email=email)
@@ -43,14 +43,10 @@ def registrar(request):
                 d.save()
             except:
                 raise Http404("error comentarios")
-            try:
-                user2=authenticate(request, username=username, password=password)
-                if user2 is not None:
-                    login(request, user2)
-                    return HttpResponseRedirect('/usuario/' + username)
-                else:
-                    raise Http404
-            except:
-                raise Http404
+
+            user2=authenticate(request, username=username, password=password)
+            if user2 is not None:
+                auth_login(request, user2)
+                return HttpResponseRedirect('/usuario/' + username)
 
     return render(request, 'register.html')
