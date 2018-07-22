@@ -1,14 +1,56 @@
-<!-- chat/templates/chat/room.html -->
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-</head>
+{% extends "inted/base.html" %}
+{% block barraup %}
+{{block.super}}
+{%endblock%}
+
+
+{%block content%}
+{% load static %}
+<link rel="stylesheet" type="text/css" href = "{% static 'usuario/usuario.css' %}" />
+
 <body>
-    <textarea readonly id="chat-log" cols="100" rows="20"></textarea><br/>
-    <input id="chat-message-input" type="text" size="100"/><br/>
-    <input id="chat-message-submit" type="button" value="Send"/>
+
+    <div id="opciones">
+        <a href="#chat" style="text-decoration:underline; color:rgb(0,0,0)">Chat</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#horario" style="text-decoration:underline; color:rgb(0,0,0)">Horario</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#seguimiento" style="text-decoration:underline; color:rgb(0,0,0)">Seguimiento</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#observaciones" style="text-decoration:underline; color:rgb(0,0,0)">Observaciones</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <div id="c" class="us">
+        <h1 id="chat">Chat con tu profesor</h1>
+        <textarea readonly id="chat-log" rows="17" cols="20"></textarea><br/>
+        <input id="chat-message-input" type="text"/>
+        <input id="chat-message-submit" type="button" value="Mandar"/>
+    </div>
+
+    <form method="GET">
+    {% csrf_token %}
+
+    <div id="nombre_usuario">
+        <p> Hola {{ username }}:</p>
+    </div>
+    <div id="texto">
+        <h1 id="horario">Horario</h1>
+        <p>{{horario_text}}</p>
+
+        <h1 id="seguimiento">Seguimiento</h1>
+        <p>{{score_text}}</p>
+
+        <h1 id="observaciones">Observaciones</h1>
+        <p>{{observaciones_text}}</p>
+        <br><br><br>
+    </div>
+    <div id="barradown">
+        <p>
+        Inted 2018
+        Organizador: Jorge Herranz Ayuso. <br>
+        Dirección de correo: inted00@gmail.com <br>
+        </p>
+    </div>
+    </form>
 </body>
+{%endblock%}
 
 <script>
     var roomName = "{{room_name}}";

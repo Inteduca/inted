@@ -1,0 +1,51 @@
+body{
+    background-size:100%;
+}
+h1{
+    font-size: 28;
+    color: solid black;
+    font-weight: bold;
+    text-align: center;
+}
+#nombre_usuario{
+    font-size: 35;
+    color: solid black;
+    position: absolute;
+    top: 15%; left: 7%;
+}
+
+#opciones{
+    font-size: 24;
+    position: absolute;
+    top:21%; left: 35%;
+}
+
+#c{
+    font-size:20;
+    color:rgb(51,51,51);
+    position: absolute; top:30%; left: 15%;
+    width:70%; height:35%;
+}
+#chat-log{
+    overflow: auto;
+    resize:none;
+    width:100%;
+}
+#chat-message-input{
+    min-height:10%; height:10%;
+    width:90%;
+}
+#chat-message-submit{
+    width: 9.4%;
+    min-height: 10%;
+}
+
+
+#texto{
+    font-size: 20;
+    color: rgb(51,51,51);
+    width: 70%;
+    position: absolute;
+    top: 83%; left: 15%;
+}
+
