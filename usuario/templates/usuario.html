@@ -19,7 +19,7 @@
 
     <div id="c" class="us">
         <h1 id="chat">Chat con tu profesor</h1>
-        <textarea readonly id="chat-log" rows="11" cols="20"></textarea><br/>
+        <textarea readonly id="chat-log" rows="11" cols="20" >{{chat_text}}</textarea><br/>
         <input id="chat-message-input" type="text"/>
         <input id="chat-message-submit" type="button" value="Mandar"/>
     </div>
@@ -78,10 +78,10 @@
         var usu = "{{username}}";
         var messageInputDom = document.querySelector('#chat-message-input');
         var message = usu + " : " + messageInputDom.value;
+        chat_text += message;
         chatSocket.send(JSON.stringify({
             'message': message
         }));
-
         messageInputDom.value = '';
     };
 </script>
