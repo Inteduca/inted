@@ -41,13 +41,7 @@
         <p>{{observaciones_text}}</p>
         <br><br><br>
     </div>
-    <div id="barradown">
-        <p>
-        Inted 2018
-        Organizador: Jorge Herranz Ayuso. <br>
-        Dirección de correo: inted00@gmail.com <br>
-        </p>
-    </div>
+
     </form>
 </body>
 
@@ -63,6 +57,13 @@
         var data = JSON.parse(e.data);
         var message = data['message'];
         document.querySelector('#chat-log').value += (message + '\n');
+
+        var textarea = document.getElementById("chat-log");
+        if(textarea.selectionStart == textarea.selectionEnd) {
+        textarea.scrollTop = textarea.scrollHeight;
+        }
+    }
+
     };
 
     chatSocket.onclose = function(e) {
