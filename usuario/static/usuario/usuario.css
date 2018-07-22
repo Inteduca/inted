@@ -43,6 +43,7 @@ h1{
 
 
 #texto{
+    text-align:justify;
     font-size: 20;
     color: rgb(51,51,51);
     width: 70%;
