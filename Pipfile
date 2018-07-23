@@ -11,6 +11,7 @@ channels-redis = "*"
 dj-database-url = "*"
 asgiref = "*"
 whitenoise = "*"
+django-query = "*"
 
 [dev-packages]
 
