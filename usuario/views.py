@@ -24,6 +24,9 @@ def usuario(request, room_name):
             score_text = "Vaya, parece que ha habido un error. Por favor, háznoslo saber contactando con nosotros por correo o móvil."
             horario_text = "Vaya, parece que ha habido un error. Por favor, háznoslo saber contactando con nosotros por correo o móvil."
             observaciones_text = "Vaya, parece que ha habido un error. Por favor, háznoslo saber contactando con nosotros por correo o móvil."
+    if request.method=="POST":
+        Comentarios.chat_text=request.POST["chat_text"]
+        Comentarios.save()
 
     context = {'room_name': room_name, 'username': username, 'chat_text':chat_text, 'horario_text':horario_text, 'score_text':score_text, 'observaciones_text':observaciones_text}
     return render(request, "usuario.html", context)

@@ -56,7 +56,6 @@
         var data = JSON.parse(e.data);
         var message = data['message'];
         document.querySelector('#chat-log').value += (message + '\n');
-
         var textarea = document.getElementById("chat-log");
         if(textarea.selectionStart == textarea.selectionEnd) {
         textarea.scrollTop = textarea.scrollHeight;
@@ -78,11 +77,17 @@
         var usu = "{{username}}";
         var messageInputDom = document.querySelector('#chat-message-input');
         var message = usu + " : " + messageInputDom.value;
-        chat_text += message;
         chatSocket.send(JSON.stringify({
             'message': message
         }));
         messageInputDom.value = '';
+        $(window).unload(function(){
+            $.ajax({
+                url: "/usuario/{{room_name}}",
+                type: "POST",
+                data: {chat_text: "{{chat_text}} += message"}
+            })
+        });
     };
 </script>
 
