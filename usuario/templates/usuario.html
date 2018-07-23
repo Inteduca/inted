@@ -81,13 +81,13 @@
             'message': message
         }));
         messageInputDom.value = '';
-        $(window).unload(function(){
+        window.onbeforeunload = function(){
             $.ajax({
                 url: "/usuario/{{room_name}}",
                 type: "POST",
                 data: {chat_text: "{{chat_text}} += message"}
             })
-        });
+        };
     };
 </script>
 
