@@ -12,6 +12,7 @@ dj-database-url = "*"
 asgiref = "*"
 whitenoise = "*"
 django-query = "*"
+django-static-jquery = "*"
 
 [dev-packages]
 
