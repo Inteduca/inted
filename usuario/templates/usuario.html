@@ -60,6 +60,11 @@
         if(textarea.selectionStart == textarea.selectionEnd) {
         textarea.scrollTop = textarea.scrollHeight;
         }
+        $.ajax({
+            url: "/usuario/{{room_name}}",
+            type: "POST",
+            data: {"message": message}
+        })
     };
 
     chatSocket.onclose = function(e) {
@@ -82,13 +87,9 @@
         }));
         messageInputDom.value = '';
     };
-    window.onbeforeunload = function(){
-            $.ajax({
-                url: "/usuario/{{room_name}}",
-                type: "POST",
-                data: {chat_text: "{{chat_text}}" += $(#chat-log).val() }
-            })
-        };
+
+
+
 </script>
 
 {%endblock%}
