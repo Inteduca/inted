@@ -1,5 +1,6 @@
 {% load static %}
 <head>
+    {% csrf_token %}
     <link rel="stylesheet" type="text/css" href = "{% static 'inted/base.css' %}">
     <link rel="icon" type="image/png" href="{% static 'inted/images/icono.png' %}"/>
     <script src="{% static 'javas/jquery.js' %}"></script>

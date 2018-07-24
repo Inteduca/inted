@@ -46,6 +46,7 @@
 
 
 <script type="text/javascript">
+    {% csrf_token %}
     var roomName = "{{room_name}}";
 
     var chatSocket = new WebSocket(
