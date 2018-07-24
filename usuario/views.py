@@ -25,6 +25,7 @@ def usuario(request, room_name):
             horario_text = "Vaya, parece que ha habido un error. Por favor, háznoslo saber contactando con nosotros por correo o móvil."
             observaciones_text = "Vaya, parece que ha habido un error. Por favor, háznoslo saber contactando con nosotros por correo o móvil."
     if request.method=="POST":
+        message = request.POST.get("message")
         Comentarios.chat_text += message
         Comentarios.save()
 
